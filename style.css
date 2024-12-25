@@ -1,20 +1,19 @@
-/* style.css */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .screen {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
-  height: 100%;
   position: relative;
   background: url("images/background.webp") no-repeat center center / cover;
   z-index: 1;
