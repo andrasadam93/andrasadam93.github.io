@@ -1,1 +1,60 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Image Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="home-screen" class="screen">
+      <h1 class="home-title">
+        Hello! Szeretnénk elvinni téged egy csodálatos napra hármasban: Te,
+        Dorka és Andris.<br />
+        Hogy szuper legyen, arra szeretnénk megkérni, hogy segíts összerakni a
+        programot! <br />
+        Lépj be és válassz a lehetőségek közül: mit ennél, mit csinálnál és
+        milyen nasit választanál?<br />
+        Természetesen nem kell egyikhez sem ragaszkodnunk, napközben is
+        alakíthatjuk majd, hogy mihez van kedvünk.
+      </h1>
+      <div class="home-boxes">
+        <div class="box" id="anna"></div>
+        <div class="box" id="vera"></div>
+        <div class="box" id="simi"></div>
+        <div class="box" id="zena"></div>
+      </div>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+      <h1 class="game-title">Válassz, mivel töltsük a napot</h1>
+      <button id="back-button">Vissza a kezdőoldalra</button>
+      <div id="panel-container">
+        <div class="panel" id="panel-left"></div>
+        <div class="panel" id="panel-right"></div>
+      </div>
+    </div>
+
+    <div id="end-screen" class="screen hidden">
+      <button id="back-button2">Vissza a kezdőoldalra</button>
+      <h1>
+        Köszi a válaszokat, ezzel már fogunk tudni könnyen szervezni!<br />Most
+        már csak időpontot kell egyeztetnünk<br />Boldog karácsonyt kívánunk és
+        hamarosan találkozunk!
+      </h1>
+    </div>
+
+    <!-- Password Popup -->
+    <div id="password-popup" class="hidden">
+      <div class="popup-content">
+        <h2>Add meg a jelszót!</h2>
+        <input type="password" id="password-input" placeholder="jelszó" />
+        <button id="password-submit">Bejelentkezés</button>
+        <p id="password-error" class="hidden">Nem stimmel a jelszó</p>
+      </div>
+    </div>
+  </body>
+</html>

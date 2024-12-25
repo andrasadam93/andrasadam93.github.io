@@ -1,0 +1,70 @@
+{
+  "anna": {
+    "food": {
+      "image-left": "images/anna-food-left.webp",
+      "image-right": "images/anna-food-right.webp",
+      "choice": ""
+    },
+    "event": {
+      "image-left": "images/anna-event-left.webp",
+      "image-right": "images/anna-event-right.webp",
+      "choice": ""
+    },
+    "treat": {
+      "image-left": "images/anna-treat-left.webp",
+      "image-right": "images/anna-treat-right.webp",
+      "choice": ""
+    }
+  },
+  "vera": {
+    "food": {
+      "image-left": "images/vera-food-left.webp",
+      "image-right": "images/vera-food-right.webp",
+      "choice": ""
+    },
+    "event": {
+      "image-left": "images/vera-event-left.webp",
+      "image-right": "images/vera-event-right.webp",
+      "choice": ""
+    },
+    "treat": {
+      "image-left": "images/vera-treat-left.webp",
+      "image-right": "images/vera-treat-right.webp",
+      "choice": ""
+    }
+  },
+  "simi": {
+    "food": {
+      "image-left": "images/simi-food-left.webp",
+      "image-right": "images/simi-food-right.webp",
+      "choice": ""
+    },
+    "event": {
+      "image-left": "images/simi-event-left.webp",
+      "image-right": "images/simi-event-right.webp",
+      "choice": ""
+    },
+    "treat": {
+      "image-left": "images/simi-treat-left.webp",
+      "image-right": "images/simi-treat-right.webp",
+      "choice": ""
+    }
+  },
+  "zena": {
+    "food": {
+      "image-left": "images/zena-food-left.webp",
+      "image-right": "images/zena-food-right.webp",
+      "choice": ""
+    },
+    "event": {
+      "image-left": "images/zena-event-left.webp",
+      "image-right": "images/zena-event-right.webp",
+      "choice": ""
+    },
+    "treat": {
+      "image-left": "images/zena-treat-left.webp",
+      "image-right": "images/zena-treat-right.webp",
+      "choice": ""
+    }
+  }
+}
