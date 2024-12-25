@@ -21,6 +21,7 @@ const passwordPopup = document.getElementById("password-popup");
 const passwordInput = document.getElementById("password-input");
 const passwordError = document.getElementById("password-error");
 const passwordSubmit = document.getElementById("password-submit");
+const gameTitle = document.getElementById("game-title");
 const leftPanel = document.getElementById("panel-left");
 const rightPanel = document.getElementById("panel-right");
 
@@ -41,12 +42,19 @@ async function loadJsonData() {
   }
 }
 
+const titleText = {
+  food: "Válassz, mi legyen a menü?",
+  event: "Mit csinálnál inkább szívesen?",
+  treat: "Milyen nasit készítsünk?",
+};
+
 // Load the current stage's images
 function loadStage() {
   const stage = stages[currentStage];
   if (jsonData[selectedCharacter] && jsonData[selectedCharacter][stage]) {
     leftPanel.style.backgroundImage = `url(${jsonData[selectedCharacter][stage]["image-left"]})`;
     rightPanel.style.backgroundImage = `url(${jsonData[selectedCharacter][stage]["image-right"]})`;
+    gameTitle.innerHTML = titleText[stage];
     console.log(`Stage loaded: ${stage}`);
   } else {
     console.error("Failed to load stage images. Check database structure.");
