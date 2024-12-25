@@ -16,6 +16,7 @@ firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const homeScreen = document.getElementById("home-screen");
 const gameScreen = document.getElementById("game-screen");
+const endScreen = document.getElementById("end-screen");
 const passwordPopup = document.getElementById("password-popup");
 const passwordInput = document.getElementById("password-input");
 const passwordError = document.getElementById("password-error");
@@ -122,11 +123,13 @@ document.querySelectorAll(".box").forEach((box) => {
 // Back to Home Button
 document.getElementById("back-button").addEventListener("click", () => {
   gameScreen.classList.add("hidden");
+  endScreen.classList.add("hidden");
   homeScreen.classList.remove("hidden");
 });
 
 document.getElementById("back-button2").addEventListener("click", () => {
   gameScreen.classList.add("hidden");
+  endScreen.classList.add("hidden");
   homeScreen.classList.remove("hidden");
 });
 // Initialize data on page load
